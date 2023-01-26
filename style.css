@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+ul {
+  list-style: none;
+}
+
+.list-user {
+  width: 35%;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 20px;
+  background: #efefef;
+  border: solid 1px #efefef;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  position: relative;
+  padding: 1rem 1rem 3rem;
+  min-height: calc(100vh - 4rem);
+}
+
+.pagination-container {
+  width: calc(100% - 2rem);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem 0;
+  justify-content: center;
+}
+
+.pagination-number,
+.pagination-button {
+  font-size: 1.1rem;
+  background-color: transparent;
+  border: none;
+  margin: 0.25rem 0.25rem;
+  cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 0.2rem;
+}
+
+.pagination-number:hover,
+.pagination-button:not(.disabled):hover {
+  background: #fff;
+}
+
+.pagination-number.active {
+  color: #fff;
+  background: #0085b6;
+}
